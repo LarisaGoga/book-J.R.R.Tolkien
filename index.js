@@ -6,6 +6,8 @@ const listOfBookVolumes = [
   "The Return of the King",
 ];
 
+const listOfBookVolumesWithComa = listOfBookVolumes.map((book) => ` "${book}"`);
+
 const quantityOfBookVolumes = listOfBookVolumes.length;
 
 const elf = {
@@ -27,7 +29,7 @@ document.body.innerHTML = `
     <h1>J.R.R.Tolkien Story</h1>
     <p>
       "${bookName}" is a single novel that was originally published in
-      ${quantityOfBookVolumes} volumes. The ${quantityOfBookVolumes} volumes are: ${listOfBookVolumes}.
+      ${quantityOfBookVolumes} volumes. The ${quantityOfBookVolumes} volumes are: ${listOfBookVolumesWithComa}.
     </p>
     <p>
       During the Battle of Helm's Deep, the Rohirrim are greatly outnumbered by
